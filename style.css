@@ -1,0 +1,35 @@
+
+
+
+.header{ width:90%;background-color:mediumslateblue; margin:auto;
+    box-sizing: border-box; float:left;}
+.h-logo{float:left;width:10%}
+.h-manue{float:left;width:55%}
+.h-search{float:left;width:25%;padding:15px 15px}
+.h-manue ul li {display:inline;position:relative;}
+.h-manue ul li a{text-decoration: none; color:white; padding:10px 15px;background-color: rgb(53, 8, 124);
+    list-style: none;line-height: bold; text-transform: capitalize;z-index:1;position:relative;}
+
+
+.h-manue ul li a::before{content:"";position:absolute;top:0;left:0;background-color:red;
+width:0;height:100%; z-index:-1; transition:.3s;border-radius: 5px;}
+.h-manue ul :hover::before{width:100%}
+
+
+img{max-width:25% ; padding:10px 15px; }
+
+
+
+/* drop down */
+ .button{display:inline-block;}
+  .button a{ position:relative;  text-decoration: none;color:white;font-weight: 600; font-size:15px;
+background-color:darkgreen; padding:10px; color:black;
+border:1px solid white;z-index:1
+} 
+.button a::before{content:"";
+position:absolute;top:0;left:0;
+background-color:red;height:100%;
+width:0;z-index:-1;
+transition:.3s;}
+
+.button a:hover::before{width:100%}
